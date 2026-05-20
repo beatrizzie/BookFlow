@@ -25,7 +25,7 @@ def buscar_livros():
             resultado_texto.insert(tk.END, "❌ Nenhum livro encontrado.")
             return
 
-        for item in dados["docs"][:5]:
+        for item in dados["docs"][:10]:
 
             titulo = item.get("title", "Sem título")
 
