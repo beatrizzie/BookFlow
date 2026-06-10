@@ -16,14 +16,12 @@ from database import (
 def abrir_area_funcionario(root, limpar_tela, tela_inicial):
 
     limpar_tela()
-    # ======================
-    # VISUAL
-    # ======================
 
-    COR_FUNDO = "#FFFFFF"  # fundo branco
-    COR_BOTAO = "#000000"  # botão preto
-    COR_TEXTO = "#000000"  # textos normais pretos
-    COR_TEXTO_BOTAO = "#FFFFFF"  # texto dos botões branco
+
+    COR_FUNDO = "#FFFFFF"  
+    COR_BOTAO = "#000000"  
+    COR_TEXTO = "#000000"  
+    COR_TEXTO_BOTAO = "#FFFFFF"  
 
     tk.Label(
         root,
@@ -33,9 +31,7 @@ def abrir_area_funcionario(root, limpar_tela, tela_inicial):
         fg=COR_TEXTO_BOTAO
     ).pack(pady=20)
 
-    # ======================
-    # BUSCA OPENLIBRARY
-    # ======================
+
 
     tk.Label(
         root,
@@ -127,9 +123,7 @@ def abrir_area_funcionario(root, limpar_tela, tela_inicial):
         font=("Arial", 12, "bold"),
         command=buscar_livros
     ).pack(pady=5)
-    # ======================
-    # LIVRO SELECIONADO
-    # ======================
+
 
     tk.Label(
         root,
@@ -195,9 +189,6 @@ def abrir_area_funcionario(root, limpar_tela, tela_inicial):
         selecionar_livro
     )
 
-    # ======================
-    # CADASTRAR EMPRÉSTIMO
-    # ======================
 
     tk.Label(
         root,
@@ -292,9 +283,6 @@ def abrir_area_funcionario(root, limpar_tela, tela_inicial):
         command=cadastrar
     ).pack(pady=10)
 
-    # ======================
-    # LISTA EMPRÉSTIMOS
-    # ======================
 
     lista = tk.Listbox(
         root,
@@ -321,9 +309,6 @@ def abrir_area_funcionario(root, limpar_tela, tela_inicial):
 
     atualizar_lista()
 
-    # ======================
-    # DEVOLUÇÃO
-    # ======================
 
     tk.Label(
         root,

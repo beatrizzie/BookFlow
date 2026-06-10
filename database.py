@@ -1,15 +1,12 @@
 import sqlite3
 
-# ==========================
-# CRIAR BANCO
-# ==========================
 
 def criar_banco():
 
     conn = sqlite3.connect("bookflow.db")
     cursor = conn.cursor()
 
-    # USUÁRIOS
+
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -18,7 +15,7 @@ def criar_banco():
     )
     """)
 
-    # FUNCIONÁRIOS
+
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS funcionarios (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -27,7 +24,7 @@ def criar_banco():
     )
     """)
 
-    # EMPRÉSTIMOS
+
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS emprestimos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -44,10 +41,6 @@ def criar_banco():
     conn.commit()
     conn.close()
 
-
-# ==========================
-# USUÁRIOS
-# ==========================
 
 def add_user(username, password):
 
@@ -96,10 +89,6 @@ def listar_usuarios():
     return dados
 
 
-# ==========================
-# FUNCIONÁRIOS
-# ==========================
-
 def add_funcionario(username, password):
 
     conn = sqlite3.connect("bookflow.db")
@@ -130,10 +119,6 @@ def validate_funcionario(username, password):
 
     return funcionario
 
-
-# ==========================
-# EMPRÉSTIMOS
-# ==========================
 
 def cadastrar_emprestimo(
     usuario_id,

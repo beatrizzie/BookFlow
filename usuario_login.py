@@ -1,9 +1,9 @@
 import tkinter as tk
 
-COR_FUNDO = "#FFFFFF"      # fundo branco
-COR_BOTAO = "#000000"      # botão preto
-COR_TEXTO = "#000000"      # textos normais pretos
-COR_TEXTO_BOTAO = "#FFFFFF"  # texto dos botões branco
+COR_FUNDO = "#FFFFFF"      
+COR_BOTAO = "#000000"      
+COR_TEXTO = "#000000"      
+COR_TEXTO_BOTAO = "#FFFFFF"  
 
 from tkinter import messagebox
 

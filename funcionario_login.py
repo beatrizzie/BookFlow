@@ -1,9 +1,9 @@
 import tkinter as tk
 
-COR_FUNDO = "#FFFFFF"      # fundo branco
-COR_BOTAO = "#000000"      # botão preto
-COR_TEXTO = "#000000"      # textos normais pretos
-COR_TEXTO_BOTAO = "#FFFFFF"  # texto dos botões branco
+COR_FUNDO = "#FFFFFF"      
+COR_BOTAO = "#000000"      
+COR_TEXTO = "#000000"      
+COR_TEXTO_BOTAO = "#FFFFFF"  
 
 from tkinter import messagebox
 
@@ -54,7 +54,7 @@ def abrir_login_funcionario(root, limpar_tela, tela_inicial):
     )
     entry_senha.pack(pady=5)
 
-    # MOSTRAR SENHA
+
 
     def mostrar_senha():
 
@@ -75,7 +75,7 @@ def abrir_login_funcionario(root, limpar_tela, tela_inicial):
         font=("Arial", 12, "bold"),
     ).pack(pady=5)
 
-    # CADASTRAR FUNCIONÁRIO
+
 
     def registrar():
 
@@ -109,7 +109,7 @@ def abrir_login_funcionario(root, limpar_tela, tela_inicial):
                 "Funcionário já existe."
             )
 
-    # LOGIN
+
 
     def login():
 

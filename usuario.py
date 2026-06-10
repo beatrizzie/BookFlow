@@ -4,9 +4,6 @@ from datetime import datetime
 
 from database import listar_emprestimos_usuario
 
-# ======================
-# CORES
-# ======================
 
 COR_FUNDO = "#FFFFFF"
 COR_BOTAO = "#000000"
@@ -25,9 +22,6 @@ def abrir_area_usuario(
 
     root.configure(bg=COR_FUNDO)
 
-    # ======================
-    # TÍTULO
-    # ======================
 
     tk.Label(
         root,
@@ -45,9 +39,6 @@ def abrir_area_usuario(
         fg=COR_TEXTO
     ).pack()
 
-    # ======================
-    # TABELA
-    # ======================
 
     colunas = (
         "Livro",
@@ -90,9 +81,6 @@ def abrir_area_usuario(
         foreground="green"
     )
 
-    # ======================
-    # CARREGAR EMPRÉSTIMOS
-    # ======================
 
     emprestimos = listar_emprestimos_usuario(
         usuario_id
@@ -154,9 +142,6 @@ def abrir_area_usuario(
             tags=(tag,)
         )
 
-    # ======================
-    # BOTÃO VOLTAR
-    # ======================
 
     tk.Button(
         root,

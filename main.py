@@ -2,14 +2,11 @@ import tkinter as tk
 
 from funcionario_login import COR_TEXTO_BOTAO
 
-COR_FUNDO = "#FFFFFF"      # fundo branco
-COR_BOTAO = "#000000"      # botão preto
-COR_TEXTO = "#000000"      # textos normais pretos
-COR_TEXTO_BOTAO = "#FFFFFF"  # texto dos botões branco
+COR_FUNDO = "#FFFFFF"      
+COR_BOTAO = "#000000"      
+COR_TEXTO = "#000000"      
+COR_TEXTO_BOTAO = "#FFFFFF"  
 
-# ==========================
-# JANELA PRINCIPAL
-# ==========================
 
 root = tk.Tk()
 root.configure(bg=COR_FUNDO)
@@ -18,18 +15,10 @@ root.geometry("1200x800")
 root.resizable(False, False)
 
 
-# ==========================
-# LIMPAR TELA
-# ==========================
-
 def limpar_tela():
     for widget in root.winfo_children():
         widget.destroy()
 
-
-# ==========================
-# ABRIR LOGIN USUÁRIO
-# ==========================
 
 def abrir_login_usuario_tela():
     print("Botao usuario clicado")
@@ -43,10 +32,6 @@ def abrir_login_usuario_tela():
     )
 
 
-# ==========================
-# ABRIR LOGIN FUNCIONÁRIO
-# ==========================
-
 def abrir_login_funcionario():
 
     from funcionario_login import abrir_login_funcionario
@@ -57,10 +42,6 @@ def abrir_login_funcionario():
         tela_inicial
     )
 
-
-# ==========================
-# TELA DE LOGIN PRINCIPAL
-# ==========================
 
 def tela_login():
 
@@ -109,10 +90,6 @@ def tela_login():
     ).pack(pady=5)
 
 
-# ==========================
-# SPLASH BOOKFLOW
-# ==========================
-
 def tela_inicial():
 
     limpar_tela()
@@ -129,10 +106,6 @@ def tela_inicial():
         tela_login
     )
 
-
-# ==========================
-# INICIAR
-# ==========================
 
 tela_inicial()
 
