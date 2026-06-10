@@ -5,11 +5,9 @@ from database import init_db, add_user, validate_user
 from busca import abrir_busca
 
 def abrir_login():
-    print("Abrindo tela de login...")
     init_db()
 
     root = tk.Tk()
-    print
     root.title("Login Form")
     root.geometry("350x300")
     root.config(bg="#f0f0f0")
