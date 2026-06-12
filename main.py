@@ -3,7 +3,7 @@ import tkinter as tk
 from funcionario_login import COR_TEXTO_BOTAO
 
 COR_FUNDO = "#FFFFFF"      
-COR_BOTAO = "#000000"      
+COR_BOTAO = "#9d88e9"      
 COR_TEXTO = "#000000"      
 COR_TEXTO_BOTAO = "#FFFFFF"  
 
